@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-warm-beige: #FAF8F3;
+  --color-cream: #FFFCF7;
+  --color-forest: #143224;
+  --color-terracotta: #D46A43;
+  --color-olive: #63735D;
+  --color-sand: #E9E1D2;
+}
+
+/* Clean Minimalism Utilities */
+.card-glass {
+  background: rgba(255, 252, 247, 0.9);
+  border: 1px solid #EAE0CE;
+  border-radius: 24px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px -4px rgba(60, 48, 36, 0.03);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-glass:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -6px rgba(60, 48, 36, 0.06);
+  border-color: #D4C4A8;
+}
+
+.badge-critical {
+  background: #FFF1EE;
+  color: #B93815;
+  border: 1px solid #F9DBAF;
+}
+
+.badge-resolved {
+  background: #F2F7F2;
+  color: #1E663B;
+  border: 1px solid #D6E6D6;
+}
+
+.badge-priority {
+  background: #FAFAFB;
+  color: #143224;
+  border: 1px solid #E9E1D2;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+

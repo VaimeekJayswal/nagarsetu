@@ -1,0 +1,6 @@
+{
+  "name": "NagarSetu AI",
+  "description": "AI-powered bridge between citizens and civic resolution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
